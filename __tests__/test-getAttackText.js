@@ -21,11 +21,11 @@ describe('person()', function() {
             armor :  {name : '阿克斯圣光盾',
                       property: 7 }
                       };
-      var proAttack1 = 214;
 
-      var result = zhang.getAttackText(player, proAttack1);
-      var expectText = '战士李四用优质毒剑攻击了普通人张三,张三受到了214点伤害,张三中毒了,张三剩余生命：1000\n' +
-      '张三受到2点毒性伤害,张三剩余生命：998\n';
+      var result = zhang.getAttackText(player);
+      var expectText = '战士李四用优质毒剑攻击了普通人张三,张三受到了214点伤害,张三中毒了,张三剩余生命：786\n' +
+      '张三受到2点毒性伤害,张三剩余生命：784\n';
+
       expect(result).toBe(expectText);
     });
   });
