@@ -7,9 +7,9 @@ function main() {
   var armor = new Armor('阿克斯圣光盾', 7);
   var weapon = new Weapon('阿姆斯特朗回旋炮', 15);
   var zhang = new Person('普通人', '张三', 1000, 200);
-  var lisi = new Person('小学生', '李四', 1000, 199, weapon.name, weapon.property, armor.name, armor.property);
+  var lisi = new Person('蛮族之王', '李四', 1000, 199, weapon.name, weapon.property, armor.name, armor.property);
   console.log('战斗开始！！！');
-  zhang.fight(lisi);
+  console.log(zhang.fight(lisi));
 }
 
 main();
