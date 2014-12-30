@@ -19,9 +19,10 @@ describe('Person', function() {
                       armor :  {name : '阿克斯圣光盾',
                       property: 7 }
                     };
-    var result = zhang.getOtherAttackText(player);
+    var proAttack2 = 193;
+    var result = zhang.getOtherAttackText(player, proAttack2);
 
-    expectText = '普通人张三攻击了战士李四,攻击了193点伤害,李四的阿克斯圣光盾抵挡了7点伤害李四还剩807点血\n';
+    expectText = '普通人张三攻击了战士李四,攻击了193点伤害,李四的阿克斯圣光盾抵挡了7点伤害李四还剩1000点血\n';
 
     expect(result).toBe(expectText);
     });
