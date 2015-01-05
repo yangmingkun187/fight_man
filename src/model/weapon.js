@@ -1,9 +1,9 @@
 var SpecialEffects = require('./specialEffects');
 
-function Weapon(name, property, SpecialEffects) {
+function Weapon(name, attackPoint, specialEffects) {
   this.name = name;
-  this.property = property;
-  this.SpecialEffects = SpecialEffects;
+  this.attackPoint = attackPoint;
+  this.specialEffects = specialEffects;
 }
 
 module.exports = Weapon;
