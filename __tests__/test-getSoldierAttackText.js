@@ -8,9 +8,8 @@ describe('fighting', function() {
     it('it should be return string', function() {
       var Fighting = require('../src/model/fighting');
       var Player = require('../src/model/player');
-      var zhang = new Player('普通人', '张三', 1000, 200, '着火了');
       var fighting = new Fighting();
-
+      var zhang = new Player('普通人', '张三', 1000, 200, '着火了');
       var lisi = {
             profession: '战士',
             name: '李四',
@@ -27,10 +26,9 @@ describe('fighting', function() {
             armor :  {name : '阿克斯圣光盾',
                       property: 7 },
         };
-
-
       var result = fighting.getSoldierAttackText(lisi, zhang);
-      var expectText = '蛮族之王李四用烈焰剑攻击了普通人张三,张三受到了214点伤害,张三着火了张三剩余生命：786\n';
+      var expectText = '蛮族之王李四用烈焰剑攻击了普通人张三,张三受到了214点伤害,张三着火了张三剩余生命：786\n' +
+      '张三受到2点火焰伤害,张三剩余生命：784\n';
 
       expect(result).toBe(expectText);
     });
